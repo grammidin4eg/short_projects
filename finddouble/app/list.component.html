@@ -1,0 +1,4 @@
+<div *ngIf="data.length" class="distr-list">
+    <list-item *ngFor="let item of data" [itemdata]="item" (opencard)="openCard($event)"></list-item>
+</div>
+<div id="winner-window" *ngIf="winner"><div id="win-text">You are Winner!</div></div>

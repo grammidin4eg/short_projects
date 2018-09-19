@@ -1,0 +1,95 @@
+/* body background */
+body {
+    background-color: whitesmoke;
+}
+
+/* card list */
+.distr-list {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #E3E1DF;
+    margin: 0 auto;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    border-width: 7px;
+    border-color: black;
+    border-style: double;
+    width: 973px;
+    height: 588px;
+}
+
+.list-item {
+    margin-left: 8px;
+    margin-top: 4px;
+    height: 192px;
+}
+
+.distr-list .list-item .center-card {
+    text-align: center;
+    font-size: large;
+    color: blue;
+    position: relative;
+    top: 58px;
+}
+
+/* winner window */
+#winner-window {
+  position: absolute;
+  left: 37%;
+  top: 40%;
+  height: 300px;
+  width: 400px;
+  background-color: green;
+  border-width: 2px;
+  border-color: black;
+  border-style: solid;
+}
+
+#winner-window .win-text {
+    text-align: center;
+    font-size: large;
+    color: aliceblue;
+    position: absolute;
+    background-color: green;
+    width: 100%;
+}
+
+#winner-window .win-btn {
+    margin: 16px auto;
+    display: block;
+    position: relative;
+    bottom: 50px;
+}
+
+/* choose theme */
+#theme-chooser {
+    position: absolute;
+    left: 37%;
+    top: 37%;
+    height: 228px;
+    width: 400px;
+    background-color: cadetblue;
+    border-width: 2px;
+    border-color: black;
+    border-style: solid;
+}
+
+#theme-chooser .dialog-title {
+    font-size: 20px;
+    color: yellow;
+    font-weight: bolder;
+    text-align: center;
+}
+
+#theme-chooser .chooser-btn {
+    margin-top: 4px;
+    margin-left: 46px;
+    cursor: pointer;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 2px;
+}
+
+#theme-chooser .chooser-btn:hover {
+    border-color: blue;
+}

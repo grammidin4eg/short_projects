@@ -1,0 +1,41 @@
+.distr-list {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #E3E1DF;
+}
+
+.distr-list {
+    width: 973px;
+    margin: 0 auto;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    border-width: 7px;
+    border-color: black;
+    border-style: double;
+}
+
+list-item {
+    margin-left: 8px;
+    margin-top: 4px;
+    height: 192px;
+}
+
+/* winner window */
+#winner-window {
+  position: absolute;
+  left: 37%;
+  top: 40%;
+  height: 300px;
+  width: 400px;
+  background-color: green;
+  border-width: 2px;
+  border-color: black;
+  border-style: solid;
+}
+
+#win-text {
+    text-align: center;
+    margin-top: 34%;
+    font-size: large;
+    color: aliceblue;
+}

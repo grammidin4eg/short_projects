@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Find Double</title>
+    <link rel="stylesheet" href="finddouble.css">    
+</head>
+
+<body>
+    <div id="description">
+    <h1><a href="/" title="to Home"><img border="0" alt="Home" src="./img/Home.png"></a> Game "Find Double"</h1>
+    </div>
+    <div id="app-finddouble">
+        <div id="theme-chooser" v-if="(appState === 0)">
+            <div class="dialog-title">Choose theme</div>
+            <img src="./img/linux/hover.png" class="chooser-btn" v-on:click.once="chooseTheme('linux')">
+            <img src="./img/faires/hover.png" class="chooser-btn" v-on:click.once="chooseTheme('faires')">
+        </div>
+        <div class="distr-list">
+            <list-item  
+                v-for="(distr, index) in distrlist" 
+                v-bind:key="distr" 
+                v-bind:card="distr"
+                v-bind:timervalue="timerValue"
+                v-on:open="openCard(distr)"                
+            ></list-item>
+        </div>
+        <div id="winner-window" v-if="isWinner()">
+            <div class="win-text">You are Winner!</div>
+            <img v-bind:src="winnerImgUrl">
+            <button class="win-btn" v-on:click="newGame">Try again!</button>
+        </div>
+    </div>    
+    <div id="credits">
+        <div> author: <a href="http://yaroslavl.hh.ru/resume/ff4eef08ff035dd8a80039ed1f4f7949763954" target="_blank">Karachevtsev Yu.Yu.</a></div>
+        <div> source:  <a href="https://github.com/grammidin4eg/vue_finddouble" target="_blank">GitHub</a></div>
+    </div>
+
+    <script src="https://unpkg.com/vue"></script>
+    <script src="card.js"></script>    
+    <script src="finddouble.js"></script>    
+</body>
+
+</html>
