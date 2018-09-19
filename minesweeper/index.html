@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>backbone sample</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="description">
+    <h1><a href="/" title="to Home"><img border="0" alt="Home" src="./img/Home.png"></a> Game MineSweeper</h1>
+    <p>Backbone.js sample</p>
+    <p>Instructions: You are presented with a board of squares. Some squares contain mines (bombs), others don't. If you click on a square containing a bomb, you lose. If you manage to click all the squares (without clicking on any bombs) you win.
+Clicking a square which doesn't have a bomb reveals the number of neighbouring squares containing bombs. Use this information plus some guess work to avoid the bombs.
+To open a square, point at the square and click on it.</p>
+</div>
+<button id="start_button">New game</button>
+<div id="main">
+    <div id="miner_app"></div>
+</div>
+<div id="credits">
+    <div> author: Karachevtsev Yu.Yu. </div>
+    <div> source:  <a href="https://github.com/grammidin4eg/minesweeper">GitHub</a></div>    
+    <div> email: mail_ego@list.ru </div>    
+    <div> <a href="https://rawgit.com/grammidin4eg/minesweeper/master/index.html">GitLink</a></div>
+</div>
+
+    <script src="libs/jquery-3.1.0.js"></script>
+    <script src="libs/underscore.js"></script>
+    <script src="libs/backbone.js"></script>
+    <script src="js/minesweeper.js"></script>
+</body>
+</html>

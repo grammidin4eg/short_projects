@@ -1,0 +1,82 @@
+/* body background */
+body {
+    background-color: whitesmoke;
+}
+
+/* App main field */
+div#miner_app {
+    background-color: darkgray;
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    border-width: 7px;
+    border-color: black;
+    border-style: double;
+}
+
+/* Put button in center of screen */
+button#start_button {
+    margin: 0 auto;
+    display: block;
+}
+
+/* cell position and size */
+#miner_app .cell {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    background-color: cadetblue;
+    margin: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#miner_app .cell {
+    color: cadetblue;
+}
+
+#miner_app .cell.opened {
+    background-color: green;
+    color: white;
+}
+
+#miner_app .cell.opened.bomb {
+    background-color: red;
+}
+
+#miner_app .cell .cell__value {
+    margin-top: 6px;
+    display: inline-block;
+}
+
+/* message box (end game) */
+.end-dialog {
+    background-color: coral;
+    height: 100px;
+    width: 484px;
+    bottom: 263px;
+    left: -47px;
+    position: relative;
+    text-align: center;
+    border-width: 7px;
+    border-color: black;
+    border-style: double;
+}
+
+.end-dialog span{
+    margin-top: 36px;
+    display: inline-block;
+    font-size: 22px;
+}
+
+.end-dialog.win-dialog {
+    background-color: antiquewhite;
+}
+
+/* hide null values */
+#miner_app .opened span.cell__value.null__value {
+    display: inline-block;
+    color: green;
+}
