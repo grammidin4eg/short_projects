@@ -1,0 +1,17 @@
+.result-dlg {
+    position: absolute;
+    width: 400px;
+    height: 300px;    
+    border: 2px solid #6e2091;    
+    top: calc(50% - 100px);
+    left: calc(50% - 200px);
+}
+
+.result-dlg__title {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    margin-top: 2px;
+    font-size: 18px;
+    font-weight: bold;
+}

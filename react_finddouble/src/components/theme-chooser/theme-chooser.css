@@ -1,0 +1,24 @@
+.theme-chooser {
+  position: absolute;
+  left: 37%;
+  top: 37%;
+  height: 228px;
+  width: 400px;
+  background-color: cadetblue;
+  border-width: 2px;
+  border-color: black;
+  border-style: solid;
+}
+
+.theme-chooser__title {
+  font-size: 20px;
+  color: yellow;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.theme-chooser__body {
+  margin: 8px 12px;
+  display: flex;
+  justify-content: space-around;
+}

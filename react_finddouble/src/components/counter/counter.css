@@ -1,0 +1,13 @@
+.counter {
+  display: inline-block;
+  min-width: 138px;
+}
+.counter__text {
+  font-size: 30px;
+  position: absolute;
+  margin-top: 17px;  
+  font-weight: bold;
+  color: blue;
+  width: 130px;
+  text-align: center;
+}

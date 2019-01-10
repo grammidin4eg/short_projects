@@ -1,0 +1,21 @@
+.App {
+  font-family: sans-serif;
+}
+
+.desc-field {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #e3e1df;
+  margin: 0 auto;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  border-width: 7px;
+  border-color: black;
+  border-style: double;
+  width: 969px;
+  height: 595px;
+}
+
+header {
+  display: flex;
+}

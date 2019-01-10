@@ -1,0 +1,18 @@
+.card {
+  display: inline-block;
+  min-height: 200px;
+}
+.card__img {
+  cursor: pointer;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 2px;
+  min-height: 190px;
+  max-height: 190px;
+  min-width: 134px;
+  max-width: 134px;
+}
+
+.card__img:hover {
+  border-color: blue;
+}
