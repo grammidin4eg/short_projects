@@ -1,0 +1,36 @@
+<div class="login">
+  <app-error-panel [obj]="error"></app-error-panel>
+  <div class="login__title">
+    <h2 class="login__title__header">Вход в систему</h2>
+  </div>
+  <form class="login__form" [formGroup]="form" (ngSubmit)="login()">
+    <div class="login__form__spacer"></div>
+    <mat-form-field>
+      <input formControlName="email" matInput placeholder="введите почту" [formControl]="form.get('email')" required autocomplete="username" [readonly]="lockDialog">
+      <mat-error *ngIf="form.get('email').invalid">{{getErrorMessage(form.get('email'))}}</mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <input formControlName="password" matInput placeholder="введите пароль" [type]="hide ? 'password' : 'text'" autocomplete="new-password" [readonly]="lockDialog">
+      <button type="button" mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'скрыть пароль'" [attr.aria-pressed]="hide">
+        <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+      </button>
+      <mat-error *ngIf="form.get('password').invalid">{{getErrorMessage(form.get('password'))}}</mat-error>
+    </mat-form-field>
+    <div class="login__form__spacer"></div>
+    <mat-divider></mat-divider>
+    <button [disabled]="lockDialog" class="login__form__login-btn" type="submit" mat-raised-button color="primary">Войти</button>
+    <div class="login__form__foggot">
+      <div class="login__form__foggot__step">
+        <span class="mat-caption">Нет аккаунта?</span>
+        <a mat-button routerLink=".">Зарегистрироваться.</a>
+      </div>
+      <div class="login__form__foggot__step">
+        <span class="mat-caption">Забыли пароль?</span>
+        <a mat-button routerLink=".">Восстановить.</a>
+      </div>
+    </div>
+    <div class="login__form__foggot">
+
+    </div>
+  </form>
+</div>

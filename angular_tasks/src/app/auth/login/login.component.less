@@ -1,0 +1,42 @@
+.login {
+  height: 100%;
+  &__title {
+    color: white;
+    background-color: #4b4753;
+    &__header {
+      text-align: center;
+      padding: 10px;
+      margin: 0;
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 50px);
+
+    &__spacer {
+      flex-grow: 1;
+      min-height: 20px;
+    }
+
+    &__login-btn {
+      margin: 12px auto;
+      width: 50%;
+    }
+
+    &__foggot {
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+
+      &__step {
+        margin: auto;
+      }
+    }
+  }
+}
+
+.mat-form-field {
+  margin: 1rem;
+}
