@@ -1,0 +1,29 @@
+.App {
+  text-align: center;
+  height: 100vh;
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  background: rgb(103,16,158);
+  background: linear-gradient(184deg, rgba(103,16,158,1) 0%, rgba(41,38,42,1) 100%);
+}
+
+h1 {
+  color: white;
+}
+
+.game-container {
+  flex-grow: 1;
+}
+
+button {
+  width: calc(100% - 40px);
+  margin: 20px;
+  height: 30px;
+  color: white;
+  background-color: #5A3472;
+  text-transform: uppercase;
+  font-size: 1em;
+  outline: none;
+}
