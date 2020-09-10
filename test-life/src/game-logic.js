@@ -1,1 +1,3 @@
-export const list = ['Hello', 'world', 'easy'];
+function createItem(list) {
+
+}

@@ -1,7 +1,7 @@
 .App {
   text-align: center;
   height: 100vh;
-  max-width: 600px;
+  max-width: 400px;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -9,12 +9,21 @@
   background: linear-gradient(184deg, rgba(103,16,158,1) 0%, rgba(41,38,42,1) 100%);
 }
 
+/*::-webkit-scrollbar {
+    width: 2px;
+}*/
+
 h1 {
   color: white;
+  font-weight: 500;
+  font-size: 20px;
 }
 
 .game-container {
   flex-grow: 1;
+  height: calc(100% - 160px);
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 button {
@@ -24,6 +33,7 @@ button {
   color: white;
   background-color: #5A3472;
   text-transform: uppercase;
-  font-size: 1em;
+  font-weight: 500;
+  font-size: 14px;
   outline: none;
 }

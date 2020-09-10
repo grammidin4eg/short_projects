@@ -1,0 +1,40 @@
+.container {
+    background-color: white;
+    margin: 12px;
+    border-radius: 8px;
+    text-align: left;
+    padding: 10px;
+    display: flex;
+}
+
+.header {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.text {
+  font-weight: normal;
+  font-size: 14px;
+}
+
+.icon {
+  border-radius: 50%;
+  margin: 0 16px 0 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  /*
+  background-image: url(live.png);
+  background-repeat: no-repeat;
+  background-position: center;*/
+}
+
+.live {
+  background: linear-gradient(180deg, #FFB800 0%, #FFF7B0 100%);
+}
+
+.dead {
+  background: linear-gradient(180deg, #0D658A 0%, #B0FFB4 100%);
+}
