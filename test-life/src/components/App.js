@@ -15,11 +15,13 @@ const ITEM_DEAD = {
 };
 
 function App() {
-  const [list, setList] = useState([])
+  const [list, setList] = useState([]);
+
   function createItem() {
     const newItem = (Math.random() >= 0.5) ? ITEM_LIVE : ITEM_DEAD;
     setList([...list, newItem]);
   }
+
   return (
     <div className="App">
       <h1>Клеточное наполнение</h1>

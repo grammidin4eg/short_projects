@@ -1,7 +1,19 @@
-import React from 'react';
+import React, {createRef, useEffect} from 'react';
 import './LifeList.css';
 
 function LifeList({data}) {
+  const itemsEndRef = createRef();
+
+  function scrollToBottom() {
+    itemsEndRef.current.scrollIntoView({ behavior: 'smooth' })
+  }
+
+  useEffect(() => {
+    if (data && data.length && (data.length > 3)) {
+      scrollToBottom();
+    }
+  }, [data]);
+
   if (!data || !data.length) {
     return (
       <div className="game-container">
@@ -11,6 +23,7 @@ function LifeList({data}) {
       </div>
     )
   }
+
   return (
     <div className="game-container">
       {data.map( (item, index) => {
@@ -26,6 +39,7 @@ function LifeList({data}) {
           </div>
         );
       })}
+      <div ref={itemsEndRef}></div>
     </div>
   )
 }
