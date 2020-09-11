@@ -30,7 +30,7 @@ function LifeList({data}) {
         return (
           <div key={index} className="container">
             <div className={"icon "+item.icon}>
-              <img src={item.icon + ".png"}/>
+              <img src={item.icon + ".png"} alt="Face"/>
             </div>
             <div className="info">
               <div className="header">{item.header}</div>
